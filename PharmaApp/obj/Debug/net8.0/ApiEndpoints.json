@@ -1,0 +1,273 @@
+[
+  {
+    "ContainingType": "PharmaApp.API.Controllers.HeathcheckController",
+    "Method": "HealthCheck",
+    "RelativePath": "api/healthcheck",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.PatientController",
+    "Method": "AssignInsurance",
+    "RelativePath": "api/patient/assign-insurance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "PharmaApp.Application.Features.Command.AddInsurance.AddInsuranceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.PatientController",
+    "Method": "CreatePatient",
+    "RelativePath": "api/patient/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "PharmaApp.Application.Features.Command.Create.CreatePatientCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.PatientController",
+    "Method": "GetPatient",
+    "RelativePath": "api/patient/GetPatient/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.PatientController",
+    "Method": "CreatePatient",
+    "RelativePath": "api/patient/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "PharmaApp.Application.Features.User.Command.Update.PatientUpdateCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.PrescriptionController",
+    "Method": "CreatePrescription",
+    "RelativePath": "api/prescription/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "PharmaApp.Application.Features.Command.AddPrescription.AddPrescriptionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.PrescriptionController",
+    "Method": "DispensePrescription",
+    "RelativePath": "api/prescription/dispense",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "PharmaApp.Application.Features.Command.DespensePrescription.DespensePrescriptionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.UserController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/user/forgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PharmaApp.Domain.model.ForgotPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.UserController",
+    "Method": "GenerateAuthCode",
+    "RelativePath": "api/user/generate-verify-2fa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PharmaApp.Domain.model.AuthCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PharmaApp.Domain.model.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.UserController",
+    "Method": "SaveUser",
+    "RelativePath": "api/user/registration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserDetail.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.CompanyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.PostalCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.State",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.City",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.Fax",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.Logo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.DotNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.InviteUserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.UserType",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserDetail.CarrierId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Documents",
+        "Type": "System.Collections.Generic.List\u00601[[PharmaApp.Domain.model.DTO.InsuranceDocumentDto, PharmaApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PharmaApp.API.Controllers.UserController",
+    "Method": "VerifyAuthCode",
+    "RelativePath": "api/user/verifycode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PharmaApp.Domain.model.VerifyAuthCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

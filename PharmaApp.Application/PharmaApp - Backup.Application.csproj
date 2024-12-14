@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="cashfree-pg-sdk-dotnet" Version="2.0.2" />
+		<PackageReference Include="Cqrs" Version="5.2.2.69" />
+		<PackageReference Include="FluentValidation" Version="11.5.1" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Text.UI" Version="17.12.215" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+		<PackageReference Include="NPOI" Version="2.7.2" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Us-Fex.Domain\PharmaApp.Domain.csproj" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <Folder Include="Features\Broker\Query\" />
+	  <Folder Include="Features\Carrier\Query\GetCarriers\" />
+	  <Folder Include="Features\Login\Query\" />
+	  <Folder Include="Services\Interface\" />
+	</ItemGroup>
+	
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>PharmaApp.Application</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

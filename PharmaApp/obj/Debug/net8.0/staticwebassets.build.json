@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "q5ejPbmM3f6N2PVLycUBNDkMZ967plJIfZE0jmRE02s=",
+  "Source": "PharmaApp.API",
+  "BasePath": "_content/PharmaApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PharmaApp.API\\wwwroot",
+      "Source": "PharmaApp.API",
+      "ContentRoot": "C:\\Users\\shanmugasundaram_v\\Desktop\\PharmaAPIApp\\PharmaApp\\wwwroot\\",
+      "BasePath": "_content/PharmaApp.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
